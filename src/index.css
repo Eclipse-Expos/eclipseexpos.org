@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-track {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: opacity 400ms;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+}
+
+.card-gradient {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  background: radial-gradient(circle, 
+    #000 29%, 
+    #0f4c74 30%, 
+    #0a2b41 31%,
+    #061926 32%,
+    /* rgba(156,126,255,1) 35%,  */
+    rgba(0,0,0,1) 35%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: darken;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.card-letters {
+  --x: 0px;
+  --y: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: var(--font-size);
+  font-weight: 500;
+  word-wrap: break-word;
+  transition: opacity 400ms;
+  background-image: radial-gradient(
+    30vw circle at 50% 50%, 
+    rgb(255, 150, 255, 0.4) 20%, 
+    /* rgb(255, 150, 255, 0.1),  */
+    transparent
+  );
+  scale: 1.03;
+}
