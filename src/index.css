@@ -34,7 +34,6 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   height: 100%;
 }
 
@@ -46,10 +45,13 @@ body {
   background: radial-gradient(circle, 
     #000 29%, 
     #0f4c74 30%, 
-    #0a2b41 31%,
-    #061926 32%,
+    #0a2b41 32%,
+    #061926 34%,
+    #031320 36%,
+    #010814 40%,
+    #000005 46%,
     /* rgba(156,126,255,1) 35%,  */
-    rgba(0,0,0,1) 35%
+    rgba(0,0,0,1) 60%
   );
   background-position: center;
   background-repeat: no-repeat;
@@ -72,8 +74,8 @@ body {
   word-wrap: break-word;
   transition: opacity 400ms;
   background-image: radial-gradient(
-    30vw circle at 50% 50%, 
-    rgb(255, 150, 255, 0.4) 20%, 
+    35vw circle at var(--x) var(--y), 
+    rgb(255, 150, 255, 0.5) 20%, 
     /* rgb(255, 150, 255, 0.1),  */
     transparent
   );
