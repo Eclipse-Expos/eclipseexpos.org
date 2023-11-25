@@ -9,6 +9,20 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+.app2 {
+  animation: fadeIn 4s ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
 .card-track {
   width: 100%;
   height: 100%;
@@ -80,4 +94,10 @@ body {
     transparent
   );
   scale: 1.03;
+}
+
+.logo {
+  --x: 0px;
+  --y: 0px;
+  transform: translate(--x, --y);
 }
