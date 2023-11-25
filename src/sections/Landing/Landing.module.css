@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  margin: 0;
-  background-color: black;
-  font-family: 'Inter', sans-serif;
-}
-
-.card-track {
+.track {
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,53 +8,44 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.001);
 }
 
-.card-wrapper {
+.wrapper {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.card-gradient {
+.gradient {
   height: 100vh;
   width: 100vw;
   aspect-ratio: 1 / 1;
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-size: 100% 100%;
-  background-color: #000;
   background: radial-gradient(
-    50vw circle at 50% 50%, 
-    #000 29%, 
+    45rem circle at 50% 50%, 
+    #000 29%,
     #0f4c74 30%, 
     #0a2b41 32%,
     #061926 34%,
     #031320 36%,
     #010814 40%,
     #000005 59%,
-    /* rgba(156,126,255,1) 35%,  */
-    rgba(0,0,0,1) 60%
+    #000 65%,
+    transparent
   );
   background-position: center;
   background-repeat: no-repeat;
   mix-blend-mode: hard-light;
   pointer-events: none;
-  z-index: 5;
+  z-index: 6;
 }
 
-.card-mouse {
+.mouse {
   --x: 50%;
   --y: 50%;
   position: absolute;
@@ -73,22 +53,15 @@ body {
   top: 0px;
   height: 100%;
   width: 100%;
-  color: white;
   font-size: var(--font-size);
   font-weight: 500;
   word-wrap: break-word;
   transition: opacity 400ms;
   background-image: radial-gradient(
-    30vw circle at var(--x) var(--y), 
-    rgb(255, 150, 255, 0.8) 20%, 
-    /* rgb(255, 150, 255, 0.1),  */
+    20rem circle at var(--x) var(--y),
+    rgb(150, 235, 195, 1) 25%,
+    rgba(255, 150, 255, 0.8) 50%,
     transparent
   );
   scale: 1.03;
-}
-
-.logo {
-  --x: 0px;
-  --y: 0px;
-  transform: translate(--x, --y);
 }
