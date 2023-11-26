@@ -59,9 +59,8 @@
   transition: opacity 400ms;
   background-image: radial-gradient(
     20rem circle at var(--x) var(--y),
-    rgb(150, 235, 195, 1) 25%,
+    rgb(150, 225, 195, 1) 25%,
     rgba(255, 150, 255, 0.8) 50%,
     transparent
   );
-  scale: 1.03;
 }

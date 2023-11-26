@@ -22,4 +22,15 @@ body {
   overflow: hidden;
   z-index: 7;
   pointer-events: none;
+  opacity: 0.9;
+
+  animation: fadeIn 1.5s ease, scrollBg 70s linear infinite;
+}
+
+@keyframes scrollBg {
+  from {
+    background-position-y: 0%;
+  } to {
+    background-position-y: 100%;
+  }
 }
