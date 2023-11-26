@@ -1,11 +1,11 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import styles from './Landing.module.scss'
 
 const Landing = () => {
   const card = useRef<HTMLDivElement>(null);
   const mouse = useRef<HTMLDivElement>(null);
 
-  const [hovered, setHovered] = useState<boolean>(false);
+  // const [hovered, setHovered] = useState<boolean>(false);
 
   const handleOnMove = (e:React.MouseEvent<HTMLDivElement>) => {
     let x = 30 * (e.clientX / window.innerWidth) + 35
@@ -21,17 +21,17 @@ const Landing = () => {
     });
   }
 
-  const handleOnEnter = () => {
-    console.log('YEET')
-    mouse.current?.animate({
-      "--x": `58%`,
-      "--y": `37%`
-    }, {
-      duration: 500,
-      fill: "forwards",
-      easing: "ease-in",
-    });
-  }
+  // const handleOnEnter = () => {
+  //   console.log('YEET')
+  //   mouse.current?.animate({
+  //     "--x": `58%`,
+  //     "--y": `37%`
+  //   }, {
+  //     duration: 500,
+  //     fill: "forwards",
+  //     easing: "ease-in",
+  //   });
+  // }
 
   return (
     <div className='grid place-items-center h-screen bg-transparent' onMouseMove={e => handleOnMove(e)}>
