@@ -27,15 +27,15 @@ const Landing = () => {
   }
 
   return (
-    <div className='grid place-items-center h-screen bg-transparent' onMouseMove={e => handleOnMove(e)}>
+    <div className='grid place-items-center h-[100svh] bg-transparent' onMouseMove={e => handleOnMove(e)}>
       <div className='text-center text-neutral-100 z-10 w-[18rem] md:w-[26rem] rounded-full bg-black aspect-square grid place-items-center'>
         <div className='p-4'>
-          <h1 className='text-3xl font-black text-neutral-200 block' 
+          <h1 className='text-2xl md:text-3xl font-black text-neutral-200 block' 
             onMouseEnter={() => console.log('sadofjas')} 
           >
             Eclipse2024
           </h1>
-          <p className='text-neutral-500 mt-4 leading-loose mx-auto max-w-[80%]'>
+          <p className='text-sm md:text-base text-neutral-500 mt-4 leading-loose mx-auto max-w-[80%]'>
             The largest youth-led conference the world has ever seen.<br/><span className='font-bold'>Let's break some records</span>. 
           </p>
         </div>
