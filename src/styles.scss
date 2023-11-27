@@ -13,7 +13,7 @@ body {
   background-image: url('./assets/stars-bg.webp');
   background-repeat: repeat;
   background-position: 50%;
-  background-size: 1090px;
+  background-size: 1500px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -22,7 +22,6 @@ body {
   overflow: hidden;
   z-index: 7;
   pointer-events: none;
-  opacity: 0.9;
 
   animation: fadeIn 1.5s ease, scrollBg 70s linear infinite;
 }
