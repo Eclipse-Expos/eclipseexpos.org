@@ -38,6 +38,7 @@
     #000 65%,
     transparent
   );
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   mix-blend-mode: hard-light;
@@ -46,8 +47,8 @@
 }
 
 .mouse {
-  --x: 50%;
-  --y: 50%;
+  --x: 45%;
+  --y: 65%;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -56,11 +57,45 @@
   font-size: var(--font-size);
   font-weight: 500;
   word-wrap: break-word;
-  transition: opacity 400ms;
   background-image: radial-gradient(
     20rem circle at var(--x) var(--y),
     rgb(150, 225, 195, 1) 25%,
     rgba(255, 150, 255, 0.8) 50%,
     transparent
   );
+  transition: opacity 400ms, background-image 400ms;
+}
+
+@keyframes swivel {
+  0% {
+    transform: rotate(0deg);
+  } 100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gradient {
+    background: radial-gradient(
+      30rem circle at 50% 50%, 
+      #000 29%,
+      #0f4c74 30%, 
+      #0a2b41 32%,
+      #061926 34%,
+      #031320 36%,
+      #010814 40%,
+      #000005 59%,
+      #000 65%,
+      transparent
+    );  
+  }
+  .mouse {
+    background-image: radial-gradient(
+      15rem circle at var(--x) var(--y),
+      rgb(150, 225, 195, 1) 25%,
+      rgba(255, 150, 255, 0.8) 50%,
+      transparent
+    );  
+    animation: swivel 10s linear infinite;
+  }
 }
