@@ -23,7 +23,7 @@ body {
   z-index: 7;
   pointer-events: none;
 
-  animation: fadeIn 1.5s ease, scrollBg 70s linear infinite;
+  animation: scrollBg 70s linear infinite;
 }
 
 @keyframes scrollBg {
