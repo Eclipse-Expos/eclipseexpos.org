@@ -2,9 +2,9 @@ import Landing from "./pages/Landing"
 import { Routes, Route } from 'react-router-dom'
 import Eclipse from "./components/Eclipse/Eclipse"
 
-import hooman from './assets/hooman.webp'
-import jeffrey from './assets/jeffrey.jpeg'
-import moulik from './assets/moulik.jpeg'
+// import hooman from './assets/hooman.webp'
+// import jeffrey from './assets/jeffrey.jpeg'
+// import moulik from './assets/moulik.jpeg'
 
 const App = () => {
   return (
