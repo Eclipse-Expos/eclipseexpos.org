@@ -15,7 +15,7 @@ const App = () => {
         <Route path='/static' element={<Eclipse type='static' />} />
         <Route path='/animate' element={<Eclipse type='animate' />} />
       </Routes>
-      <div className='mx-auto mt-16 max-w-[60rem]'>
+      {/* <div className='mx-auto mt-16 max-w-[60rem]'>
         <h1 className='text-center font-black text-2xl text-neutral-200'>Our Team</h1>
         <div className='mx-auto flex flex-col md:flex-row text-neutral-200 mt-8 text-center justify-center'>
           <div className='w-full md:w-1/3 text-center flex flex-col items-center justify-center gap-4'>
@@ -34,7 +34,7 @@ const App = () => {
             <p className='text-neutral-400'>Chief Technology Officer</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
