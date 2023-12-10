@@ -1,6 +1,7 @@
 import Landing from "./pages/Landing"
 import { Routes, Route } from 'react-router-dom'
 import Eclipse from "./components/Eclipse/Eclipse"
+import stars from './styles/stars.module.scss'
 
 // import hooman from './assets/hooman.webp'
 // import jeffrey from './assets/jeffrey.jpeg'
@@ -9,7 +10,10 @@ import Eclipse from "./components/Eclipse/Eclipse"
 const App = () => {
   return (
     <div>
-      <div className='starbg'></div>
+      <div>
+        <div className={stars.background}></div>
+        <div className={stars.foreground}></div>
+      </div>
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/static' element={<Eclipse type='static' />} />

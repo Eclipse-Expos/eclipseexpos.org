@@ -16,8 +16,8 @@ const Landing = (props: {
       return;
     }
 
-    let x = 30 * (e.clientX / window.innerWidth) + 35
-    let y = 30 * (e.clientY / window.innerHeight) + 35
+    let x = 20 * (e.clientX / window.innerWidth) + 40
+    let y = 20 * (e.clientY / window.innerHeight) + 40
     
     mouse.current?.animate({
       "--x": `${x}%`,
