@@ -14,6 +14,7 @@ const App = () => {
         <Route path='/' element={<Landing />} />
         <Route path='/static' element={<Eclipse type='static' />} />
         <Route path='/animate' element={<Eclipse type='animate' />} />
+        <Route path='/blank' element={<Eclipse />} />
       </Routes>
       {/* <div className='mx-auto mt-16 max-w-[60rem]'>
         <h1 className='text-center font-black text-2xl text-neutral-200'>Our Team</h1>
