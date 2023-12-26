@@ -2,10 +2,12 @@ import { ReactElement, useRef } from 'react';
 import styles from './Eclipse.module.scss'
 import cx from 'classnames'
 
-const Landing = (props: { 
+interface EclipseProps {
   children?: ReactElement
   type?: 'default' | 'static' | 'animate'
-}) => {
+}
+
+const Eclipse = (props: EclipseProps) => {
   const card = useRef<HTMLDivElement>(null);
   const mouse = useRef<HTMLDivElement>(null);
 
@@ -48,4 +50,4 @@ const Landing = (props: {
   )
 }
 
-export default Landing
+export default Eclipse
