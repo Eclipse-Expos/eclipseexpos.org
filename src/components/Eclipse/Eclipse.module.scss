@@ -43,7 +43,7 @@
   background-repeat: no-repeat;
   mix-blend-mode: hard-light;
   pointer-events: none;
-  z-index: 6;
+  z-index: -2;
 }
 
 .mouse {
@@ -54,6 +54,7 @@
   top: 0px;
   height: 100%;
   width: 100%;
+  z-index: -3;
   font-size: var(--font-size);
   background-image: radial-gradient(
     20rem circle at var(--x) var(--y),

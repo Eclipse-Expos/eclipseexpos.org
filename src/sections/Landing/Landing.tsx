@@ -4,13 +4,13 @@ const Landing = () => {
   return (
     <Eclipse type='default' children={
       <div className='p-4'>
-        <h2 className='text-2xl md:text-[2.25rem] text-neutral-200 block'>
+        <h2 className='text-[1.7rem] md:text-[2.5rem] text-neutral-200 block font-bold'>
           Eclipse2024
         </h2>
-        <p className='text-sm md:text-base text-neutral-500 mt-8 mx-auto max-w-[80%]'>
-          The largest youth-led conference the world has ever seen.
+        <p className='text-[0.85rem] md:text-sm text-neutral-500 mt-8 mx-auto max-w-[80%]'>
+          The largest youth-led event the world has ever seen.
         </p>
-        <p className='text-sm md:text-base font-bold text-neutral-500 mt-4'>
+        <p className='text-[0.85rem] md:text-sm font-bold text-neutral-500 mt-4'>
           Let's break some records.
         </p>
       </div>

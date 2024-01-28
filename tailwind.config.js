@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontSize: {
+      sm: '1rem',
+      base: '18px'
+    },
     extend: {},
   },
   plugins: [],
