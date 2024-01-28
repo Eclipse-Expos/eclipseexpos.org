@@ -1,9 +1,12 @@
-import './About.scss'
-
 const About = () => {
   return (
     <div className='typography spaced about'>
-      <h2>The world's largest youth-led conference</h2>
+      <div className='max-w-[60%] mx-auto'>
+        <h2>Eclipse is for youth </h2>
+        <p>
+
+        </p>
+      </div>
     </div>
   )
 }
