@@ -4,9 +4,9 @@ const Landing = () => {
   return (
     <Eclipse type='default' children={
       <div className='p-4'>
-        <h2 className='text-[1.7rem] md:text-[2.5rem] text-neutral-200 block font-bold'>
+        <h1 className='text-[1.7rem] md:text-[2.5rem] text-neutral-200 block font-bold'>
           Eclipse2024
-        </h2>
+        </h1>
         <p className='text-[0.85rem] md:text-sm text-neutral-500 mt-8 mx-auto max-w-[80%]'>
           The largest youth-led event the world has ever seen.
         </p>

@@ -9,7 +9,11 @@ export default {
       sm: '1rem',
       base: '18px'
     },
-    extend: {},
+    extend: {
+      colors: {
+        bg: '#1c1c1f'
+      }
+    },
   },
   plugins: [],
 }
