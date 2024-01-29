@@ -1,7 +1,7 @@
 export const CardsData = [
   {
     title: "Showcase",
-    description: <>An exhibition hall showcasing the best of youth-led initiatives, from startups to research projects.</>
+    description: <>An exhibition hall showcasing the best of youth-led initiatives, from nonprofits to research projects.</>
   },
   {
     title: "Keynotes",

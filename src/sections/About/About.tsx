@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className='bg-[#1c1c1f] spaced' id='about'>
       <div className='typography spaced border-y-[1px] border-y-neutral-700 py-16'>
-        <h2>Eclipse2024 is for <span className='bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent'>you</span>th</h2>
+        <h2 className='font-normal'>Eclipse2024 is for <span className='font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent'>you</span>th</h2>
         <p className='mt-4'>
           In late 2024, we're bringing together <span className='font-bold'>1000+</span> of the next generation's changemakers to the largest youth-led event on the planet.
           <br/><br/>
