@@ -38,7 +38,9 @@ const Eclipse = (props: EclipseProps) => {
       } 
     }}>
       <div className='text-center text-neutral-100 z-10 w-[18rem] md:w-[27rem] rounded-full bg-black aspect-square grid place-items-center'>
-        {props.children}
+        <div className={`${styles.children}`}>
+          {props.children}
+        </div>
       </div>
       <div className={styles.track}>
         <div className={styles.wrapper} ref={card}>
