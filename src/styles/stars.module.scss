@@ -35,6 +35,15 @@ $shadows-medium: multiple-box-shadow(600);
   animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 768px) {
+  .background {
+    animation-delay: 1.5s;
+  }
+  .foreground {
+    animation-delay: 1.5s;
+  }
+}
+
 @keyframes scroll {
   from {
     transform: translateY(0px);

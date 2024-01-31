@@ -4,7 +4,7 @@ import Cards from '../../sections/Cards/Cards'
 
 const IndexPage: React.FC = () => {
   return (
-    <div>
+    <div className='w-screen h-screen relative left-0 top-0 overflow-clip'>
       <Landing />
       {/* <div className='bg-transparent h-24'></div>
       <div className='h-12 bg-neutral-950'></div>
