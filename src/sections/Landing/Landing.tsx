@@ -14,7 +14,7 @@ const Landing = () => {
           <p className='text-[0.75rem] sm:text-sm font-bold text-neutral-500 mt-2 md:mt-4'>
             Let's break some records.
           </p>
-          <button className='mx-auto text-[0.75rem] sm:text-sm font-bold mt-2 md:mt-6'>Pre-Register</button>
+          <button className='mx-auto text-[0.75rem] sm:text-sm font-bold mt-2 md:mt-6' onClick={() => {window.open('https://apply.eclipseexpos.org/')}}>Pre-Register</button>
         </div>
       }/>
     </div>
