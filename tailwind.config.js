@@ -14,6 +14,13 @@ export default {
         bg: '#1c1c1f'
       }
     },
+    screens: {
+      'sm': '390px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px'
+    }
   },
   plugins: [],
 }

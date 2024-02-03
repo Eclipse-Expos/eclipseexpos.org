@@ -16,7 +16,10 @@ $shadows-medium: multiple-box-shadow(600);
   position: fixed;
   z-index: -1;
   box-shadow: $shadows-small;
-  animation: scroll 70s linear infinite;
+  opacity: 0;
+  animation: fadeIn 0.5s, scroll 70s linear infinite;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 .foreground {
@@ -26,7 +29,19 @@ $shadows-medium: multiple-box-shadow(600);
   position: fixed;
   background: transparent;
   box-shadow: $shadows-medium;
-  animation: scroll 140s linear infinite;
+  opacity: 0;
+  animation: fadeIn 0.5s, scroll 140s linear infinite;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    animation-delay: 1.5s;
+  }
+  .foreground {
+    animation-delay: 1.5s;
+  }
 }
 
 @keyframes scroll {
@@ -37,3 +52,11 @@ $shadows-medium: multiple-box-shadow(600);
     transform: translateY(-2000px);
   }
 };
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
