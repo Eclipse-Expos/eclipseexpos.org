@@ -1,7 +1,7 @@
 import { ReactElement, useRef } from 'react';
 import cx from 'classnames';
 import styles from './Eclipse.module.scss';
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface EclipseProps {
   children?: ReactElement;
@@ -12,7 +12,7 @@ const Eclipse = (props: EclipseProps) => {
   const card = useRef<HTMLDivElement>(null);
   const mouse = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
 
   const handleOnMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
