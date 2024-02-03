@@ -79,7 +79,7 @@ const Footer = () => {
             <p className='font-bold text-neutral-200'>© Eclipse Expositions</p>
             <p className='text-dimmed text-sm mt-4'>Let's break some records.</p>
           </div>
-          <div className='flex gap-2'>
+          <div className='flex gap-2 mt-4'>
             {
               SocialsData.map(
                 (social, index) => {
