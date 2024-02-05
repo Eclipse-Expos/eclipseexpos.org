@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Inter', sans-serif;
+  color: #a9a9a9;
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+  color: #eee;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 18px;
+
+}
+
+.typography {
+  max-width: 55rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+button {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  color: #fff;
+  background-color: rgba(230, 230, 230, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 32px;
+  align-items: center;
+  padding: 10px 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  box-shadow: 0 0 3px 0.5px rgba(255, 255, 255, 0.05);
+
+  transition: border-color 0.3s ease, background-color .2s ease, opacity .2s ease;
+
+  &:hover, &:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:active, &:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  &.glow {
+    box-shadow: rgb(25, 251, 255) 0px 0px 10px;
+    background-color: rgb(25, 251, 255);
+    &:hover {
+      box-shadow: rgb(25, 251, 255) 0px 0px 20px;
+    }
+  }
+}
