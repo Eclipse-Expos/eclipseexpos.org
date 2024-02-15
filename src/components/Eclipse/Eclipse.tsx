@@ -1,7 +1,7 @@
 import { ReactElement, useRef } from 'react';
 import cx from 'classnames';
 import styles from './Eclipse.module.scss';
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 interface EclipseProps {
   children?: ReactElement;
@@ -13,6 +13,10 @@ const Eclipse = (props: EclipseProps) => {
   const mouse = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll();
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    console.log("Page scroll: ", latest)
+  })  
 
   const handleOnMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -37,6 +41,7 @@ const Eclipse = (props: EclipseProps) => {
     );
   };
 
+
   return (
     <motion.div
       className={`${styles.eclipse}`}
@@ -46,7 +51,7 @@ const Eclipse = (props: EclipseProps) => {
         }
       }}
       style={{
-        scale: scrollYProgress
+        scale: scrollYProgress,
       }}
     >
       <div className='text-center text-neutral-100 z-10 w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] rounded-full bg-black aspect-square grid place-items-center'>
