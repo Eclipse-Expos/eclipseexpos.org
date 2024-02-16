@@ -1,7 +1,7 @@
 import { ReactElement, useRef } from 'react';
 import cx from 'classnames';
 import styles from './Eclipse.module.scss';
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+// import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 interface EclipseProps {
   children?: ReactElement;
@@ -12,11 +12,11 @@ const Eclipse = (props: EclipseProps) => {
   const card = useRef<HTMLDivElement>(null);
   const mouse = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest)
-  })  
+  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
+  //   console.log("Page scroll: ", latest)
+  // })  
 
   const handleOnMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -43,18 +43,18 @@ const Eclipse = (props: EclipseProps) => {
 
 
   return (
-    <motion.div
+    <div
       className={`${styles.eclipse}`}
       onMouseMove={(e) => {
         if (props.type === 'default' || !props.type) {
           handleOnMove(e);
         }
       }}
-      style={{
-        scale: scrollYProgress,
-      }}
+      // style={{
+      //   scale: scrollYProgress,
+      // }}
     >
-      <div className='text-center text-neutral-100 z-10 w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] rounded-full bg-black aspect-square grid place-items-center'>
+      <div className='text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-100 z-10 w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] rounded-full bg-black aspect-square grid place-items-center'>
         <div className={`${styles.children}`}>{props.children}</div>
       </div>
       <div className={styles.track}>
@@ -70,7 +70,7 @@ const Eclipse = (props: EclipseProps) => {
           ></div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

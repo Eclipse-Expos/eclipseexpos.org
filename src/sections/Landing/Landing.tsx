@@ -1,22 +1,22 @@
 import Eclipse from '../../components/Eclipse/Eclipse'
-import logo from '/logo.png'
+// import logo from '/logo.png'
 
 const Landing = () => {
   return (
-    <div id='landing' className='h-[200vh]'>
+    <div id='landing'>
       <Eclipse type='default' children={
-        <div className='p-4'>
-          {/* <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-neutral-200 block font-bold'>
+        <div className='p-8'>
+          <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-neutral-200 block font-bold text-center'>
             Eclipse2024
-          </h1> */}
-          <img src={logo} alt='Eclipse2024' className='w-[8rem] sm:w-[12rem] md:w-[15rem] mx-auto' />
-          {/* <p className='text-[0.75rem] sm:text-sm text-neutral-500 mt-6 md:mt-8 mx-auto max-w-[80%]'>
-            The largest youth-led event the world has ever seen.
+          </h1>
+          {/* <img src={logo} alt='Eclipse2024' className='w-[8rem] sm:w-[12rem] md:w-[23rem] mx-auto' /> */}
+          <p className='text-[0.75rem] sm:text-sm text-neutral-500 mt-4 mx-auto hidden md:block'>
+            The world's largest youth-led event.
           </p>
-          <p className='text-[0.75rem] sm:text-sm font-bold text-neutral-500 mt-2 md:mt-4'>
+          <p className='text-[0.75rem] sm:text-sm font-bold text-neutral-500 mt-4'>
             Let's break some records.
           </p>
-          <button className='mx-auto text-[0.75rem] sm:text-sm font-bold mt-2 md:mt-6' onClick={() => {window.open('https://apply.eclipseexpos.org/')}}>Pre-Register</button> */}
+          <button className='mx-auto text-[0.75rem] sm:text-sm font-bold mt-4' onClick={() => {window.open('https://apply.eclipseexpos.org/')}}>Pre-Register</button>
         </div>
       }/>
     </div>
