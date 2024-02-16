@@ -25,8 +25,8 @@ const Eclipse = (props: EclipseProps) => {
       return;
     }
 
-    let x = 20 * (e.clientX / window.innerWidth) + 40;
-    let y = 20 * (e.clientY / window.innerHeight) + 40;
+    let x = 20 * (e.clientX / window.innerWidth) - 10;
+    let y = 20 * (e.clientY / window.innerHeight) - 10;
 
     mouse.current?.animate(
       {

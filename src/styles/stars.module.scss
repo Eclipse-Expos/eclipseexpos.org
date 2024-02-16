@@ -18,7 +18,7 @@ $shadows-medium: multiple-box-shadow(600);
   box-shadow: $shadows-small;
   opacity: 0;
   animation: fadeIn 0.5s, scroll 70s linear infinite;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 

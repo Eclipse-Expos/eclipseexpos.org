@@ -29,7 +29,7 @@
 .children {
   opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 
 @keyframes fadeIn {
@@ -94,32 +94,28 @@
   height: 100svh;
   z-index: -3;
   background-image: radial-gradient(
-    20rem circle at 40% 60%,
+    20rem circle at 50% 50%,
     rgb(150, 225, 195, 1) 25%,
     rgba(255, 150, 255, 0.8) 50%,
     transparent
   );
-  transition: opacity 400ms, background-image 400ms;
-  animation: fadeIn 2s ease, swivel 1.5s cubic-bezier(.39,.05,.53,.91) 1.75s forwards, delay 1s linear 3s forwards;
+  transform: translate(-10%, 10%);
+  transition: all 0.4s;
+  animation: fadeIn 2s ease, swivel 1.5s cubic-bezier(.39,.05,.53,.91) 1s forwards, delay 0.3s linear 2.5s forwards;
 }
 
 @keyframes swivel {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translate(-10%, 10%);
   } 100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translate(-10%, 10%);
   }
 }
 
 @keyframes delay {
   from {} 
   to {
-    background-image: radial-gradient(
-      var(--mouse-size) circle at var(--x) var(--y),
-      rgb(150, 225, 195, 1) 25%,
-      rgba(255, 150, 255, 0.8) 50%,
-      transparent
-    );
+    transform: translate(var(--x), var(--y));
   }
 }
 
