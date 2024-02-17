@@ -2,8 +2,6 @@
   width: 100svw;
   height: 100svh;
   overflow: clip;
-  position: absolute;
-  top: 0;
 }
 
 .track {
@@ -70,13 +68,13 @@
 
 @property --x {
   syntax: "<percentage>";
-  initial-value: 40%;
+  initial-value: -10%;
   inherits: false;
 }
 
 @property --y {
   syntax: "<percentage>";
-  initial-value: 60%;
+  initial-value: 10%;
   inherits: false;
 }
 
@@ -132,7 +130,7 @@
       #000005 59%,
       #010101 65%,
       transparent
-      );  
+    );
   }
   .mouse {
     background-image: radial-gradient(
@@ -141,6 +139,7 @@
       rgba(255, 150, 255, 0.8) 50%,
       transparent
     );  
+    transform: translate(-10%, 10%);
     animation: fadeIn 2s ease, swivel 8s linear infinite 1.5s;
   }
   .children {
@@ -170,5 +169,6 @@
       rgba(255, 150, 255, 0.8) 50%,
       transparent
     );  
+    transform: translate(-10%, 10%);
   }
 }
