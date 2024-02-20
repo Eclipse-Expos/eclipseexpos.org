@@ -1,7 +1,7 @@
 import Landing from '../../sections/Landing/Landing'
 import About from '../../sections/About/About'
-// import Cards from '../../sections/Cards/Cards'
-// import Sponsor from '../../sections/Sponsor/Sponsor'
+import Cards from '../../sections/Cards/Cards'
+import Sponsor from '../../sections/Sponsor/Sponsor'
 // import Message from '../../sections/Message/Message'
 // import Join from '../../sections/Join/Join'
 // import CTA from '../../sections/CTA/CTA'
@@ -18,10 +18,16 @@ const IndexPage: React.FC = () => {
       <div className='h-12 bg-[#1c1c1f]'></div>
       <div className='bg-[#1c1c1f] h-[8rem]'></div>
       <About />
-      <div className='bg-[#1c1c1f] h-[8rem]'></div>
-      <div className='bg-[#1c1c1f] h-[8rem]'></div>
-      <div className='bg-[#1c1c1f] h-[8rem]'></div>
-      <div className='bg-[#1c1c1f] h-[8rem]'></div>
+      <Cards />
+      <div className='h-12 bg-[#1c1c1f]'></div>
+      <div className='h-12 bg-neutral-900 brightness-90'></div>
+      <div className='h-12 bg-neutral-950 brightness-150'></div>
+      <div className='h-12 bg-neutral-950'></div>
+      <div className='bg-transparent h-24'></div>
+      <div className='bg-transparent h-24'></div>
+      <Sponsor />
+      <div className='bg-transparent h-24'></div>
+      <div className='bg-transparent h-24'></div>
     </div>
   )
 }

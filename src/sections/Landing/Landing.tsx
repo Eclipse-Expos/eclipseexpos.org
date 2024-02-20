@@ -1,5 +1,6 @@
 import Eclipse from '../../components/Eclipse/Eclipse'
 // import logo from '/logo.png'
+import { Button } from 'eclipse-components'
 
 const Landing = () => {
   return (
@@ -16,7 +17,7 @@ const Landing = () => {
           <p className='text-[0.75rem] sm:text-sm font-bold text-neutral-500 mt-4'>
             Let's break some records.
           </p>
-          <button className='mx-auto text-[0.75rem] sm:text-sm font-bold mt-4' onClick={() => {window.open('https://apply.eclipseexpos.org/')}}>Pre-Register</button>
+          <Button className='mx-auto mt-4 bg-black text-neutral-200 hover:bg-neutral-200 hover:text-black' onClick={() => {window.open('https://apply.eclipseexpos.org/')}}>Pre-Register</Button>
         </div>
       }/>
     </div>

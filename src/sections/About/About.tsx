@@ -28,7 +28,7 @@ const About = () => {
     <motion.div className="bg-[#1c1c1f] spaced relative border-y-[1px] border-y-neutral-700" id="about">
       <div className="typography spaced py-16">
         <motion.h2
-          className="font-normal"
+          className="text-left"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -40,7 +40,7 @@ const About = () => {
           th
         </motion.h2>
         <p
-          className="mt-4 flex flex-col gap-8"
+          className="mt-4 flex flex-col gap-8 z-20"
         >
           {chunks.map((chunk, i) => {
             return (
