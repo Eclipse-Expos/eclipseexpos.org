@@ -28,7 +28,7 @@ const Cards = () => {
   return (
     <div className={`bg-bg ${styles.cards}`}>
       <motion.div
-        className="typography gap-8 py-16 grid grid-cols-1 md:grid-cols-3"
+        className="typography gap-8 py-32 grid grid-cols-1 md:grid-cols-3"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: "all" }}
