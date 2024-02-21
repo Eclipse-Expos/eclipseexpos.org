@@ -26,7 +26,7 @@ const About = () => {
 
   return (
     <motion.div className="bg-[#1c1c1f] spaced relative border-y-[1px] border-y-neutral-700" id="about">
-      <div className="typography spaced py-16">
+      <div className="typography spaced py-16 relative z-50">
         <motion.h2
           className="text-left"
           initial={{ opacity: 0 }}

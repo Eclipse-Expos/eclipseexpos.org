@@ -48,7 +48,7 @@ const Eclipse = (props: EclipseProps) => {
         }
       }}
     >
-      <div className='text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-100 z-10 w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] h-[14.8rem] sm:h-[20.5rem] md:h-[27rem] rounded-full bg-black aspect-square grid place-items-center'>
+      <div className={`${styles.inner} text-neutral-100 rounded-full bg-black aspect-square grid place-items-center w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] h-[14.8rem] sm:h-[20.5rem] md:h-[27rem]`}>
         <div className={`${styles.children}`}>{props.children}</div>
       </div>
       <div className={styles.track}>
