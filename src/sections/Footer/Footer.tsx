@@ -18,7 +18,7 @@ const Footer = () => {
             {SocialsData.map((social, index) => {
               return (
                 <div>
-                  <a href={social.href} key={`social-${index}`}>
+                  <a href={social.href} key={`social-${index}`} aria-label='Social'>
                     {social.icon}
                   </a>
                 </div>

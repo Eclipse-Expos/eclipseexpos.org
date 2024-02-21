@@ -1,6 +1,6 @@
-import one from "../assets/img/cards/one.jpg";
-import two from "../assets/img/cards/two.jpg";
-import three from "../assets/img/cards/three.png";
+import one from "../assets/img/cards/one.webp";
+import two from "../assets/img/cards/two.webp";
+import three from "../assets/img/cards/three.webp";
 
 interface Card {
   title: string;
