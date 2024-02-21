@@ -2,7 +2,7 @@ import { Button } from "eclipse-components";
 
 const CTA = () => {
   return (
-    <div className="bg-bg">
+    <div className="bg-bg" id='message'>
       <div className="typography">
         <h2>
           Write your story at{" "}
