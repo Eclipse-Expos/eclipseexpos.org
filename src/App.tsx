@@ -2,9 +2,8 @@ import IndexPage from "./pages/index"
 import { Routes, Route } from 'react-router-dom'
 import Eclipse from "./components/Eclipse/Eclipse"
 import stars from './styles/stars.module.scss'
-import React from 'react'
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div id='App'>
       <div id='bg'>

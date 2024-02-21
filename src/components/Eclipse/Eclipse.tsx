@@ -26,27 +26,27 @@ const Eclipse = (props: EclipseProps) => {
       mouse.current?.animate(
         {
           transform: `translate(${x}%, ${y}%)`,
-        }, {
+        },
+        {
           duration: 300,
           fill: 'forwards',
           easing: 'ease',
         }
-      )
+      );
     }
   };
 
   return (
     <div
       className={`${styles.eclipse}`}
-      onAnimationEnd={() => {setAnimationCount(animationCount + 1)}}
+      onAnimationEnd={() => {
+        setAnimationCount(animationCount + 1);
+      }}
       onMouseMove={(e) => {
         if (props.type === 'default' || !props.type) {
           handleOnMove(e);
         }
       }}
-      // style={{
-      //   scale: scrollYProgress,
-      // }}
     >
       <div className='text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-100 z-10 w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] h-[14.8rem] sm:h-[20.5rem] md:h-[27rem] rounded-full bg-black aspect-square grid place-items-center'>
         <div className={`${styles.children}`}>{props.children}</div>

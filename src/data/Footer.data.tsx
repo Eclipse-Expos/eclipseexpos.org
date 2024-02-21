@@ -1,0 +1,68 @@
+import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa6';
+
+interface Link {
+  title: string;
+  href: string;
+}
+
+interface Social {
+  icon: JSX.Element;
+  href: string;
+}
+
+export const SiteNavigationData = [
+  {
+    title: 'Home',
+    href: 'landing',
+  },
+  {
+    title: 'About',
+    href: 'about',
+  },
+  {
+    title: 'Cards',
+    href: 'cards',
+  },
+  {
+    title: 'Message',
+    href: 'message',
+  },
+] as Link[];
+
+export const ContactsData = [
+  {
+    title: 'General',
+    href: 'mailto:hello@eclipseexpos.org',
+  },
+  {
+    title: 'Press',
+    href: 'mailto:press@eclipseexpos.org',
+  },
+  {
+    title: 'Business',
+    href: 'mailto:business@eclipseexpos.org',
+  },
+  {
+    title: 'Global',
+    href: 'mailto:global@eclipseexpos.org',
+  },
+] as Link[];
+
+export const SocialsData = [
+  {
+    icon: <FaInstagram />,
+    href: 'https://www.instagram.com/eclipseexpos/',
+  },
+  {
+    icon: <FaLinkedin />,
+    href: 'https://www.linkedin.com/company/eclipseexpos/',
+  },
+  {
+    icon: <FaGithub />,
+    href: 'https://github.com/Eclipse-Expos',
+  },
+  {
+    icon: <FaTiktok />,
+    href: 'https://www.tiktok.com/@eclipseexposition',
+  },
+] as Social[];
