@@ -25,13 +25,15 @@ const Cards = () => {
                     {card.desc}
                   </CardItem>
                 </div>
-                <CardItem translateZ='100' className='w-full h-[10rem]'>
-                  <img
-                    src={card.img}
-                    className='rounded-md object-cover h-full w-full'
-                    alt={`card-img-${index}`}
-                  />
-                </CardItem>
+                {card.img && (
+                  <CardItem translateZ='100' className='w-full h-[10rem]'>
+                    <img
+                      src={card.img}
+                      className='rounded-md object-cover h-full w-full'
+                      alt={`card-img-${index}`}
+                    />
+                  </CardItem>
+                )}
               </CardBody>
             </CardContainer>
           );
