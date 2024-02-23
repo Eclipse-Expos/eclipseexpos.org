@@ -46,6 +46,10 @@ export const ContactsData = [
     title: 'Global',
     href: 'mailto:global@eclipseexpos.org',
   },
+  {
+    title: 'Careers',
+    href: 'mailto:join@eclipseexpos.org'
+  }
 ] as Link[];
 
 export const SocialsData = [
