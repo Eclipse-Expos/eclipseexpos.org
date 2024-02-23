@@ -9,7 +9,7 @@ const Tiles: React.FC<{ order?: 'up' | 'down' }> = ({ order = 'up' }) => {
   if (order === 'up') {
     return (
       <div>
-        <div className='h-12 bg-neutral-950'></div>
+        <div className='h-12 bg-[#111111]'></div>
         <div className='h-12 bg-neutral-950 brightness-150'></div>
         <div className='h-12 bg-neutral-900 brightness-90'></div>
         <div className='h-12 bg-[#1c1c1f]'></div>
@@ -21,7 +21,7 @@ const Tiles: React.FC<{ order?: 'up' | 'down' }> = ({ order = 'up' }) => {
         <div className='h-12 bg-[#1c1c1f]'></div>
         <div className='h-12 bg-neutral-900 brightness-90'></div>
         <div className='h-12 bg-neutral-950 brightness-150'></div>
-        <div className='h-12 bg-neutral-950'></div>  
+        <div className='h-12 bg-[#111111]'></div>  
       </div>
     )
   }
@@ -38,8 +38,9 @@ const IndexPage = () => {
     <div className='w-screen h-screen relative left-0 top-0 overflow-x-clip'>
       <Landing />
       
-      <Space />
-      <Tiles />
+      <div className='h-12 bg-neutral-950 brightness-150'></div>
+      <div className='h-12 bg-neutral-900 brightness-90'></div>
+      <div className='h-12 bg-[#1c1c1f]'></div>
       <Space bg='filled' />
     
       <About />

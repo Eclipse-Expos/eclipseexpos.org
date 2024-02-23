@@ -1,5 +1,6 @@
 import Eclipse from '../../components/Eclipse/Eclipse';
 import { Button } from 'eclipse-components';
+import banner from '../../assets/img/banner.png';
 
 const Landing = () => {
   return (
@@ -8,9 +9,10 @@ const Landing = () => {
         type='default'
         children={
           <div className='p-8'>
-            <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-neutral-200 block font-bold text-center'>
+            {/* <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-neutral-200 block font-bold text-center'>
               Eclipse2024
-            </h1>
+            </h1> */}
+            <img src={banner} alt='Eclipse2024' className='w-4/5 mx-auto' />
             <p className='text-[0.75rem] sm:text-sm text-neutral-500 mt-4 mx-auto hidden md:block'>
               The world's largest youth-led event.
             </p>

@@ -12,7 +12,7 @@ const Sponsor = () => {
       <div className='relative top-0 left-0 w-full mb-4 md:mb-16'>
         <h2
           className={`relative md:absolute top-0 left-0 text-center w-full transition-opacity duration-300 ${
-            hover ? 'opacity-0' : 'opacity-100'
+            hover ? 'md:opacity-0' : 'md:opacity-100'
           }`}
         >
           Sponsor the innovators of{' '}

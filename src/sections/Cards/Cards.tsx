@@ -15,8 +15,8 @@ const Cards = () => {
       >
         {CardData.map((card, index) => {
           return (
-            <CardContainer key={`card-${index}`} className='h-full'>
-              <CardBody className='bg-[#2A2A32] flex flex-col justify-between gap-4 p-4 h-full rounded-md border-[1px] border-solid border-[#404040]'>
+            <CardContainer key={`card-${index}`} className='w-full h-full'>
+              <CardBody className='w-full bg-[#2A2A32] flex flex-col justify-between gap-4 p-4 h-full rounded-md border-[1px] border-solid border-[#404040]'>
                 <div className='flex flex-col gap-2'>
                   <CardItem translateZ='50'>
                     <h3>{card.title}</h3>
@@ -25,13 +25,15 @@ const Cards = () => {
                     {card.desc}
                   </CardItem>
                 </div>
-                <CardItem translateZ='100' className='w-full h-[10rem]'>
-                  <img
-                    src={card.img}
-                    className='rounded-md object-cover h-full w-full'
-                    alt={`card-img-${index}`}
-                  />
-                </CardItem>
+                {card.img && (
+                  <CardItem translateZ='100' className='w-full h-[10rem]'>
+                    <img
+                      src={card.img}
+                      className='rounded-md object-cover h-full w-full'
+                      alt={`card-img-${index}`}
+                    />
+                  </CardItem>
+                )}
               </CardBody>
             </CardContainer>
           );
