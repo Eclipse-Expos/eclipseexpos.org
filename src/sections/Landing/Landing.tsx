@@ -10,9 +10,9 @@ const Landing = () => {
         children={
           <div className='p-8'>
             {/* <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-neutral-200 block font-bold text-center'>
-              Eclipse2024
+              EclipseExpo
             </h1> */}
-            <img src={banner} alt='Eclipse2024' className='w-4/5 mx-auto' />
+            <img src={banner} alt='EclipseExpo' className='w-4/5 mx-auto' />
             <p className='text-[0.75rem] sm:text-sm text-neutral-500 mt-4 mx-auto hidden md:block'>
               The world's largest youth-led event.
             </p>

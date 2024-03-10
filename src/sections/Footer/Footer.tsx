@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='mr-auto flex flex-col justify-between'>
           <div>
             <p className='mb-6'>© COPYRIGHT</p>
-            <p className='font-bold text-neutral-200'>Eclipse Expositions</p>
+            <p className='font-bold text-neutral-200'>Eclipse Expositions Inc.</p>
             <p className='text-dimmed'>151 Charles St W, Kitchener, ON</p>
           </div>
           <div className='flex gap-2 mt-4'>

@@ -10,15 +10,15 @@ const About = () => {
       changemakers to the largest youth-led event on the planet.
     </>),
     (<>
-      From students building tech, doing high-level research, or significantly impacting their communities, Eclipse2024 will showcase
+      From students building tech, doing high-level research, or significantly impacting their communities, EclipseExpo will showcase
       youth initiatives and inspire youth to pursue impactful projects
       beyond the classroom. From speakers to an exposition hall,
-      cutting-edge robotics to the arts, Eclipse2024 will reshape how youth
+      cutting-edge robotics to the arts, EclipseExpo will reshape how youth
       make the world's next biggest decisions. We're a global event based in
       Waterloo, Canada's hotspot for innovation.
     </>),
     (<>
-      Eclipse2024 will be a full day of collaboration, inspiration, and
+      EclipseExpo will be a full day of collaboration, inspiration, and
       networking, celebrating the next generation of leaders and
       changemakers, starting with you.
     </>)
@@ -33,7 +33,7 @@ const About = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Eclipse2024 is for{" "}
+          EclipseExpo is for{" "}
           <span className="font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent">
             you
           </span>

@@ -7,7 +7,7 @@ const CTA = () => {
         <h2>
           Write your story at{' '}
           <span className='font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent'>
-            Eclipse2024
+            EclipseExpo
           </span>
         </h2>
         <p className='mt-4'>
@@ -15,7 +15,7 @@ const CTA = () => {
           we realize; we need to invest in our youth today.
           <br />
           <br />
-          Eclipse2024 is designed to give youth the chance to invest in the
+          EclipseExpo is designed to give youth the chance to invest in the
           future, by giving them the platform to showcase and grow their
           leadership capabilities. By uniting the next generation, we're
           ensuring our impact is made across the globe by youth, on a larger

@@ -33,7 +33,7 @@ const Sponsor = () => {
       </div>
       <p className='mt-4 text-center'>
         Empower the next generation's changemakers to turn their{' '}
-        <strong>ideas into reality</strong>. Investing in Eclipse2024 is
+        <strong>ideas into reality</strong>. Investing in EclipseExpo is
         investing in a future of creativity, initiative, and positive change.
       </p>
       <Button
