@@ -1,34 +1,35 @@
-import { Button } from 'eclipse-components';
+import { Button } from "eclipse-components";
 
 const CTA = () => {
   return (
-    <div className='bg-bg' id='message'>
-      <div className='typography'>
+    <div className="bg-bg" id="message">
+      <div className="typography">
         <h2>
-          Write your story at{' '}
-          <span className='font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent'>
-            EclipseExpo
+          Stiamo{" "}
+          <span className="font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent">
+            ASSUMENDO
           </span>
         </h2>
-        <p className='mt-4'>
-          Today's youth are tomorrow's leaders. Tomorrow is coming faster than
-          we realize; we need to invest in our youth today.
+        <p className="mt-4">
+          I giovani di oggi sono i leader di domani. Il domani arriverà più
+          velocemente di quanto pensiamo; dobbiamo investire nei nostri giovani
+          oggi.
           <br />
           <br />
-          EclipseExpo is designed to give youth the chance to invest in the
-          future, by giving them the platform to showcase and grow their
-          leadership capabilities. By uniting the next generation, we're
-          ensuring our impact is made across the globe by youth, on a larger
-          scale than ever before.
+          Unendoti al nostro team di pianificazione, aiuterai a offrire ai
+          giovani la piattaforma per mostrare e far crescere le loro capacità di
+          leadership. Unendo la prossima generazione, ci assicuriamo che il
+          nostro impatto sia ottenuto in tutto il mondo dai giovani, su una
+          scala più ampia che mai.
           <br />
           <br />
-          Let's make tomorrow start here.
+          Sei pronto/a?
         </p>
         <Button
-          onClick={() => window.open('https://apply.eclipseexpos.org/')}
-          className='mt-8'
+          onClick={() => window.open("https://apply.eclipseexpos.org/")}
+          className="mt-8"
         >
-          Pre-Register
+          Unisciti
         </Button>
       </div>
     </div>

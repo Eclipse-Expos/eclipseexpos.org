@@ -10,18 +10,18 @@ interface Card {
 
 export const CardData = [
   {
-    title: "Showcases",
-    desc: "showcasing the best of youth-led initiatives from nonprofits and research projects.",
+    title: "Vetrine",
+    desc: "che mostrano il meglio delle iniziative guidate dai giovani da parte di organizzazioni non profit e progetti di ricerca.",
     // img: one,
   },
   {
-    title: "Keynotes",
-    desc: "from both youth and the world's most influential leaders including CEOs, politicians, professors, and more.",
+    title: "Discorsi programmatici",
+    desc: "di giovani e dei leader più influenti del mondo, tra cui amministratori delegati, politici, e professori.",
     // img: two,
   },
   {
-    title: "Workshops",
-    desc: "to explore new skills including coding, design, and entrepreneurship.",
+    title: "Workshop",
+    desc: "per esplorare nuove competenze tra cui programmazione, design e imprenditorialità.",
     // img: three,
   },
 ] as Card[];

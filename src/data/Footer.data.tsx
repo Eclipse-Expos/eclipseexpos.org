@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa6';
+import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa6";
 
 interface Link {
   title: string;
@@ -12,61 +12,61 @@ interface Social {
 
 export const SiteNavigationData = [
   {
-    title: 'Home',
-    href: 'landing',
+    title: "Home",
+    href: "landing",
   },
   {
-    title: 'About',
-    href: 'about',
+    title: "Chi siamo",
+    href: "about",
   },
   {
-    title: 'Cards',
-    href: 'cards',
+    title: "Cards",
+    href: "cards",
   },
   {
-    title: 'Message',
-    href: 'message',
+    title: "Messaggio",
+    href: "message",
   },
 ] as Link[];
 
 export const ContactsData = [
   {
-    title: 'General',
-    href: 'mailto:hello@eclipseexpos.org',
+    title: "Generale",
+    href: "mailto:hello@eclipseexpos.org",
   },
   {
-    title: 'Press',
-    href: 'mailto:press@eclipseexpos.org',
+    title: "Stampa",
+    href: "mailto:press@eclipseexpos.org",
   },
   {
-    title: 'Business',
-    href: 'mailto:business@eclipseexpos.org',
+    title: "Affari",
+    href: "mailto:business@eclipseexpos.org",
   },
   {
-    title: 'Global',
-    href: 'mailto:global@eclipseexpos.org',
+    title: "Globale",
+    href: "mailto:global@eclipseexpos.org",
   },
   {
-    title: 'Careers',
-    href: 'mailto:join@eclipseexpos.org'
-  }
+    title: "Carriere",
+    href: "mailto:join@eclipseexpos.org",
+  },
 ] as Link[];
 
 export const SocialsData = [
   {
     icon: <FaInstagram />,
-    href: 'https://www.instagram.com/eclipseexpos/',
+    href: "https://www.instagram.com/eclipseexpos/",
   },
   {
     icon: <FaLinkedin />,
-    href: 'https://www.linkedin.com/company/eclipseexpos/',
+    href: "https://www.linkedin.com/company/eclipseexpos/",
   },
   {
     icon: <FaGithub />,
-    href: 'https://github.com/Eclipse-Expos',
+    href: "https://github.com/Eclipse-Expos",
   },
   {
     icon: <FaTiktok />,
-    href: 'https://www.tiktok.com/@eclipseexposition',
+    href: "https://www.tiktok.com/@eclipseexposition",
   },
 ] as Social[];
