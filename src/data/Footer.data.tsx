@@ -32,7 +32,7 @@ export const SiteNavigationData = [
 export const ContactsData = [
   {
     title: "Generale",
-    href: "mailto:hello@eclipseexpos.org",
+    href: "mailto:italia@eclipseexpos.org",
   },
   {
     title: "Stampa",

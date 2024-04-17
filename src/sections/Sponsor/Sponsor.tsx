@@ -39,7 +39,7 @@ const Sponsor = () => {
       <Button
         className="mt-8"
         onClick={() => {
-          window.open("mailto:sponsor@eclipseexpos.org");
+          window.open("mailto:italia@eclipseexpos.org");
         }}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

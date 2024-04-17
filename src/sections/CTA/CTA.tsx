@@ -26,7 +26,7 @@ const CTA = () => {
           Sei pronto/a?
         </p>
         <Button
-          onClick={() => window.open("https://apply.eclipseexpos.org/")}
+          onClick={() => window.open("mailto:italia@eclipseexpos.org")}
           className="mt-8"
         >
           Unisciti

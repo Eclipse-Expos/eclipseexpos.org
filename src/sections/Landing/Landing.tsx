@@ -23,7 +23,7 @@ const Landing = () => {
             <Button
               className="mx-auto mt-4 bg-black text-neutral-200 hover:bg-neutral-200 hover:text-black"
               onClick={() => {
-                window.open("https://apply.eclipseexpos.org/");
+                window.open("mailto:italia@eclipseexpos.org");
               }}
             >
               Unisciti a noi
