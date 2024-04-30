@@ -4,7 +4,7 @@ import Cards from "../../sections/Cards/Cards";
 import Sponsor from "../../sections/Sponsor/Sponsor";
 import CTA from "../../sections/CTA/CTA";
 import Footer from "../../sections/Footer/Footer";
-import Launch from "../../sections/Launch/Launch";
+// import Launch from "../../sections/Launch/Launch";
 
 const Tiles: React.FC<{ order?: "up" | "down" }> = ({ order = "up" }) => {
   if (order === "up") {
