@@ -3,9 +3,14 @@ import { useState, useEffect } from 'react';
 const WelcomeCycle = () => {
   const greetings = [
     { lang: 'English', text: 'Welcome' },
+    { lang: "Romanaian", text: 'Bine ați venit'},
     { lang: 'French', text: 'Bienvenue' },
-    { lang: 'Spanish', text: 'Bienvenida' },
+    { lang: 'Japanese', text: 'ようこそ' },
     { lang: 'German', text: 'Willkommen' },
+    { lang: 'Russian', text: 'Добро пожаловать' },
+    { lang: 'Korean', text: '어서 오십시오' },
+    { lang: 'Spanish', text: 'Bienvenida' },
+    { lang: 'Chinese', text: '欢迎' },
     // ... Add more languages
   ];
 
