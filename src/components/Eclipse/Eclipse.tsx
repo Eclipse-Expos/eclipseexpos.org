@@ -1,6 +1,7 @@
 import { ReactElement, useRef, useState } from 'react';
 import cx from 'classnames';
 import styles from './Eclipse.module.scss';
+import WelcomeCycle from './Welcome';
 
 interface EclipseProps {
   children?: ReactElement;
@@ -49,7 +50,9 @@ const Eclipse = (props: EclipseProps) => {
       }}
     >
       <div className={`${styles.inner} text-neutral-100 rounded-full bg-black aspect-square grid place-items-center w-[14.8rem] sm:w-[20.5rem] md:w-[27rem] h-[14.8rem] sm:h-[20.5rem] md:h-[27rem]`}>
-        <div className={`${styles.children}`}>{props.children}</div>
+        <div className={`${styles.children}`}>
+          <WelcomeCycle />
+        </div>
       </div>
       <div className={styles.track}>
         <div className={styles.wrapper} ref={card}>

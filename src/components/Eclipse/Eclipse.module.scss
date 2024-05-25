@@ -90,7 +90,7 @@
   );
   transform: translate(-10%, 10%);
   transition: all 0.4s;
-  animation: fadeIn 2s ease, swivel 1.5s cubic-bezier(.39,.05,.53,.91) 1s forwards, delay 0.3s linear 2.5s forwards;
+  animation: fadeIn 2s ease, swivel 8s linear infinite 1.5s;
 }
 
 @keyframes swivel {

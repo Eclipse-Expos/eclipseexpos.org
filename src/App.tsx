@@ -1,4 +1,4 @@
-import IndexPage from "./pages/index"
+// import IndexPage from "./pages/index"
 import { Routes, Route } from 'react-router-dom'
 import Eclipse from "./components/Eclipse/Eclipse"
 import stars from './styles/stars.module.scss'
@@ -11,7 +11,8 @@ const App = () => {
         <div className={stars.foreground}></div>
       </div>
       <Routes>
-        <Route path='/' element={<IndexPage />} />
+        {/* <Route path='/' element={<IndexPage />} /> */}
+        <Route path='/' element={<Eclipse />} />
         <Route path='/static' element={<Eclipse type='static' />} />
         <Route path='/animate' element={<Eclipse type='animate' />} />
         <Route path='/blank' element={<Eclipse />} />
